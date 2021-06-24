@@ -1,0 +1,91 @@
+
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+   background-color:#616c7d; 
+   color: #616c7d;
+   display: flex;
+   justify-content: space-between;
+}
+
+header h1{
+    background-color: #616c7d;
+    background-color:#9ed9db;
+    color: #616c7d;
+    display: inline;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header nav ul li{
+    display: inline;
+}
+
+.hero{
+    background-image: url("../images/hero-background.png");
+    display: flex;
+}
+
+.hero h2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background: #9ed9db;
+    color: #616c7d;
+}
+
+.about{
+    display: flex;
+    background: #e2d3eb;
+}
+
+.about h2{
+    font-size: 30px;
+    padding: 0px 5px 0px 20px;
+    border-right: 3px solid #616c7d;
+}
+
+.projects{
+    display: flex;
+    background: #e2d3eb;
+    padding: 0px 5px 0px 20px;
+    
+}
+
+.projects h2{
+    border-right: 3px solid #616c7d;
+}
+
+.project h3{
+    
+    background: blue;
+    display: inline-block;
+}
+
+
+.contact{
+    display: flex;
+    background: #e2d3eb;
+}
+
+.contact h2{
+    padding: 0px 5px 0px 20px;
+    border-right: 3px solid #616c7d;
+}
