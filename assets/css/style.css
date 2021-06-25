@@ -13,18 +13,25 @@ header{
    color: #616c7d;
    display: flex;
    justify-content: space-between;
+   flex-wrap: wrap;
 }
 
 header h1{
-    background-color: #616c7d;
+    font-size: 35px;
+    font-weight: bold;
     background-color:#9ed9db;
     color: #616c7d;
-    display: inline;
+    padding: 0px 5px 0px 30px;
+    display: flex;
+    align-items: center;
+    margin: 3px 5px 20px 0px;
 }
 
 header a{
     text-decoration: none;
+    color: #616c7d;
 }
+
 
 header nav ul{
     display: flex;
@@ -34,19 +41,31 @@ header nav ul{
     list-style: none;
 }
 
-header nav ul li{
-    display: inline;
+header nav ul li a{
+    margin: 40px 30px 0px 30px;
+    color: #9ed9db;
+    font-weight: lighter; 
+    text-decoration: none;
+    border-bottom: 3px solid #9ed9db;
 }
+
 
 .hero{
     background-image: url("../images/hero-background.png");
-    display: flex;
-}
-
-.hero h2{
+    height: 250px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    padding-right: 40px;
+}
+
+.hero h2{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 200px;
     background: #9ed9db;
     color: #616c7d;
 }
@@ -60,11 +79,17 @@ header nav ul li{
     font-size: 30px;
     padding: 0px 5px 0px 20px;
     border-right: 3px solid #616c7d;
+    
+}
+
+.about p{
+    padding-left: 40px;
+   
 }
 
 .projects{
     display: flex;
-    background: #e2d3eb;
+    background: yellow;
     padding: 0px 5px 0px 20px;
     
 }
@@ -76,7 +101,7 @@ header nav ul li{
 .project h3{
     
     background: blue;
-    display: inline-block;
+
 }
 
 
