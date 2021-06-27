@@ -5,6 +5,7 @@ body{
     height: 100%;
     margin: 0px;
     padding: 0px;
+    color: #616c7d;
     font-family: Arial, Helvetica, sans-serif;
 }
 h2{
@@ -14,7 +15,6 @@ h2{
 
 header{
    background-color:#616c7d; 
-   color: #616c7d;
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
@@ -23,7 +23,6 @@ header{
 header h1{
     font-weight: bold;
     background-color:#9ed9db;
-    color: #616c7d;
     padding: 0px 5px 0px 30px;
     display: flex;
     align-items: center;
@@ -52,6 +51,11 @@ header nav ul li a{
     border-bottom: 3px solid #9ed9db;
 }
 
+header nav ul li a:hover{
+    background: #9ed9db;
+    color: #eeebf2;
+}
+
 
 .hero{
     background-image: url("../images/hero-background.png");
@@ -70,102 +74,134 @@ header nav ul li a{
     height: 40px;
     width: 200px;
     background: #9ed9db;
-    color: #616c7d;
+    font-size: 20px;
 }
 
 
 .about{
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    background: #e2d3eb;
+    background:#e2d3eb;
 
 }
 
-.about h2{
-    background: chocolate;
-
-    
-}
+/* .about h2{
+    background: chocolate; 
+} */
 
 .about p{
-    
-    background: chartreuse;
-    padding-left: 30px;
+    /* background: chartreuse; */
+    display: flex;
+    padding-left: 70px;
     width: 80%;
     text-align: center;
+    justify-content: center;
 }
 
-.projects{
-    /* display: flex;
+.work-container{
+    display: flex;
     justify-content: flex-start;
-    align-items: flex-end; */
+    align-items:flex-start;
+    flex-wrap: wrap;
     background: #e2d3eb;
-    /* padding: 0px 5px 0px 20px; */
-    
+    padding-top: 50px;
 }
 
 .border{
     flex-direction: column;
     display: flex;
-    
     align-items: center;
-    background: green;
-    flex-wrap: wrap;
+    background: #e2d3eb;
+    /* flex-wrap: wrap; */
     border-left: 3px solid #616c7d;
     width: 75%;
-    
 }
 
-.work-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+
+/*this is for the space left of projects
+    to makethe border line up*/
+.container-main{
+    margin-left: 63px;
 }
 
-.work{
+/*width helps how wide the container will be*/
+/* .project{
     display: flex;
-    width: 25%;
     justify-content: flex-start;
+    width: 85%;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background: yellow;
+    margin: 5px auto;
+} */
 
+/*project image size adjustment*/
+.project img{
+    padding-left: 50px;
+    max-height: 100%;
+    max-width: 100%;  
 }
 
-.container-main h2{
-    border-right: 3px solid #616c7d;
-    background: cornflowerblue;
+/*Beginning of title location adjustment*/
+.title{
+    font-weight: bold;
+    background: #e6e1d5;
+    position: absolute;
+    text-align: center;
+    border: 3px solid #9ed9db;
+}
+.title1{
+    left: 200px;
+    top: 800px;
 }
 
-.project1{
+.title2{
+    width: 100px;
+    left: 200px;
+    top: 1200px;
+}
+
+.title3{
+    width: 100px;
+    left: 200px;
+    top: 1550px;
+}
+
+.title4{
+    width: 100px;
+    left: 200px;
+    top: 1890px;
+}
+/*End of title location adjustment*/
+
+
+
+.resume{
     display: flex;
-    justify-content: center;
-    order: 0;
-    width: 80%;
-    align-items: center;
-    background: white;
-    flex-grow: 0;
-    margin-left: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: #e2d3eb;
+    padding-top: 50px;
 }
 
+/*padding helps align border*/
+.resume h2{
+    padding: 0px 5px 0px 20px;
+}
 
-
-.project{
+.info{
     display: flex;
     justify-content: space-between;
-    width: 80%;
-    align-items: center;
-    flex-wrap: wrap;
-    background: gray;
-    margin: 5px auto;
+    text-align: center;
+    text-decoration: none;
+    width: 85%;
+    /* background: orange;    */
 }
 
-
-.contact{
-    display: flex;
-    background: #e2d3eb;
-}
-
-.contact h2{
-    padding: 0px 5px 0px 20px;
-
+.info a{
+    margin: 30px auto;
+    text-decoration: none;
+    border-bottom: 3px solid#616c7d;
 }
