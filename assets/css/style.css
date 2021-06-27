@@ -7,6 +7,10 @@ body{
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
+h2{
+    font-size: 30px;
+    font-weight: bold;
+}
 
 header{
    background-color:#616c7d; 
@@ -17,7 +21,6 @@ header{
 }
 
 header h1{
-    font-size: 35px;
     font-weight: bold;
     background-color:#9ed9db;
     color: #616c7d;
@@ -60,7 +63,7 @@ header nav ul li a{
 }
 
 .hero h2{
-    font-size: 20px;
+   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,38 +73,90 @@ header nav ul li a{
     color: #616c7d;
 }
 
+
 .about{
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
     background: #e2d3eb;
+
 }
 
 .about h2{
-    font-size: 30px;
-    padding: 0px 5px 0px 20px;
-    border-right: 3px solid #616c7d;
+    background: chocolate;
+
     
 }
 
 .about p{
-    padding-left: 40px;
-   
+    
+    background: chartreuse;
+    padding-left: 30px;
+    width: 80%;
+    text-align: center;
 }
 
 .projects{
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: flex-end; */
+    background: #e2d3eb;
+    /* padding: 0px 5px 0px 20px; */
+    
+}
+
+.border{
+    flex-direction: column;
     display: flex;
-    background: yellow;
-    padding: 0px 5px 0px 20px;
+    
+    align-items: center;
+    background: green;
+    flex-wrap: wrap;
+    border-left: 3px solid #616c7d;
+    width: 75%;
     
 }
 
-.projects h2{
+.work-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.work{
+    display: flex;
+    width: 25%;
+    justify-content: flex-start;
+
+}
+
+.container-main h2{
     border-right: 3px solid #616c7d;
+    background: cornflowerblue;
 }
 
-.project h3{
-    
-    background: blue;
+.project1{
+    display: flex;
+    justify-content: center;
+    order: 0;
+    width: 80%;
+    align-items: center;
+    background: white;
+    flex-grow: 0;
+    margin-left: 20px;
+}
 
+
+
+.project{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    flex-wrap: wrap;
+    background: gray;
+    margin: 5px auto;
 }
 
 
@@ -112,5 +167,5 @@ header nav ul li a{
 
 .contact h2{
     padding: 0px 5px 0px 20px;
-    border-right: 3px solid #616c7d;
+
 }
