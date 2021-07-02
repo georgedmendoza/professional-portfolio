@@ -100,80 +100,98 @@ header nav ul li a:hover{
     justify-content: center;
 }
 
-.work-container{
-    display: flex;
-    justify-content: flex-start;
-    align-items:flex-start;
-    flex-wrap: wrap;
-    background: #e2d3eb;
-    padding-top: 50px;
-}
-
 .border{
     flex-direction: column;
     display: flex;
     align-items: center;
     background: #e2d3eb;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     border-left: 3px solid #616c7d;
     width: 75%;
 }
 
 
-/*this is for the space left of projects
-    to makethe border line up*/
-.container-main{
-    margin-left: 63px;
-}
+/*Beginning of title location adjustment*/
 
-/*width helps how wide the container will be*/
-/* .project{
+.work-container{
     display: flex;
+    background: yellow;
     justify-content: flex-start;
-    width: 85%;
     align-items: flex-start;
     flex-wrap: wrap;
-    background: yellow;
-    margin: 5px auto;
+    padding-top: 50px;
+}
+
+/* .container-main{
+    display: flex;
+    background: red;
+    justify-content:flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
 } */
 
-/*project image size adjustment*/
-.project img{
-    padding-left: 50px;
-    max-height: 100%;
-    max-width: 100%;  
+/*align border */
+.section-heading h2{
+    padding: 0px 5px 0px 58px;
 }
 
-/*Beginning of title location adjustment*/
+.projects-container{
+    background: chartreuse;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .title{
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    background: cyan;
+    font-size: 30px;
     font-weight: bold;
-    background: #e6e1d5;
-    position: absolute;
-    text-align: center;
-    border: 3px solid #9ed9db;
-}
-.title1{
-    left: 200px;
-    top: 800px;
 }
 
-.title2{
-    width: 100px;
-    left: 200px;
-    top: 1200px;
+
+.title a{
+    background: red;
+    text-decoration: none;
+    color: #616c7d;
 }
 
-.title3{
-    width: 100px;
-    left: 200px;
-    top: 1550px;
+#run-buddy{
+    background-image: url(../images/run-buddy1.PNG);
+    width: 700px;
+    height: 300px;
 }
 
-.title4{
-    width: 100px;
-    left: 200px;
-    top: 1890px;
+.title:hover{
+    transform: scale(1.05);
+    transition: all .5s;
 }
+/* .title:link{
+    
+} */
+
+#horiseon{
+    background-image: url(../images/horiseon1.PNG);
+    width: 700px;
+    height: 300px;
+}
+
+#code{
+    background-image: url(../images/code.PNG);
+    width: 700px;
+    height: 300px;
+}
+
+#calculator{
+    background-image: url(../images/calculator.PNG);
+    width: 700px;
+    height: 300px;
+}
+
 /*End of title location adjustment*/
 
 
