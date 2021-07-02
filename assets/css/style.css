@@ -231,3 +231,63 @@ header nav ul li a:hover, .info a:hover{
     border-bottom: 3px solid var(--secondary-blue);
     color: var(--third-gray);
 }
+
+@media screen and (max-width: 768) {
+    header nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        margin-left: 100px;
+    }
+
+    .section-heading h2{
+        padding: 0px 5px 0px 30px;
+    }
+
+    #run-buddy, #horiseon, #code, #calculator{
+        width: 70%;
+        height: 300px;
+        background-size: 100% 100%;
+    }
+
+    h2{
+        font-size: 20px;
+    }   
+}
+
+@media screen and (max-width: 575) {
+    header nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    .section-heading h2{
+        padding: 0px 5px 0px 15px;
+    }
+
+    #run-buddy, #horiseon, #code, #calculator{
+        width: 70%;
+        height: 300px;
+        background-size: 100% 100%;
+    }
+
+    h2{
+        font-size: 15px;
+    } 
+
+    .info{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        text-decoration: none;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+}
+
