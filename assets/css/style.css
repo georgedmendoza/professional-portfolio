@@ -1,3 +1,11 @@
+/*creating variable*/
+:root{
+    --primary-purple:#e2d3eb;
+    --secondary-blue:#9ed9db;
+    --third-gray:#616c7d;
+    --four-white:#eeebf2;
+}
+
 
 /*general properties*/
 body{
@@ -5,7 +13,7 @@ body{
     height: 100%;
     margin: 0px;
     padding: 0px;
-    color: #616c7d;
+    color: var(--third-gray);
     font-family: Arial, Helvetica, sans-serif;
 }
 h2{
@@ -14,7 +22,7 @@ h2{
 }
 
 header{
-   background-color:#616c7d; 
+   background-color:var(--third-gray); 
    display: flex;
    justify-content: space-between;
    flex-wrap: wrap;
@@ -22,7 +30,7 @@ header{
 
 header h1{
     font-weight: bold;
-    background-color:#9ed9db;
+    background-color: var(--secondary-blue);
     padding: 0px 5px 0px 30px;
     display: flex;
     align-items: center;
@@ -31,7 +39,7 @@ header h1{
 
 header a{
     text-decoration: none;
-    color: #616c7d;
+    color: var(--third-gray);
 }
 
 /*flex for navigator*/
@@ -46,15 +54,15 @@ header nav ul{
 /*nav apperance*/
 header nav ul li a{
     margin: 40px 30px 0px 30px;
-    color: #9ed9db;
+    color: var(--secondary-blue);
     font-weight: lighter; 
     text-decoration: none;
-    border-bottom: 3px solid #9ed9db;
+    border-bottom: 3px solid var(--secondary-blue);
 }
 
 header nav ul li a:hover, .info a:hover{
-    background: #9ed9db;
-    color: #eeebf2;
+    background: var(--secondary-blue);
+    color: var(--four-white);
 }
 
 
@@ -62,9 +70,13 @@ header nav ul li a:hover, .info a:hover{
     background-image: url("../images/hero-background.png");
     height: 250px;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: flex-start;
+    align-items: flex-start;
     padding-right: 40px;
+}
+
+.hero img{
+    height: 50%;
 }
 
 /*flex for hero section*/
@@ -74,7 +86,7 @@ header nav ul li a:hover, .info a:hover{
     justify-content: center;
     height: 40px;
     width: 200px;
-    background: #9ed9db;
+    background: var(--secondary-blue);
     font-size: 20px;
 }
 
@@ -84,7 +96,7 @@ header nav ul li a:hover, .info a:hover{
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    background: #e2d3eb;
+    background: var(--primary-purple);
     padding-top: 50px;
 }
 
@@ -101,9 +113,9 @@ header nav ul li a:hover, .info a:hover{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background: #e2d3eb;
+    background: var(--primary-purple);
     flex-wrap: wrap;
-    border-left: 3px solid #616c7d;
+    border-left: 3px solid var(--third-gray);
     width: 75%;
 }
 
@@ -111,7 +123,7 @@ header nav ul li a:hover, .info a:hover{
 /*flex for work secion*/
 .work-container{
     display: flex;
-    background: #e2d3eb;
+    background: var(--primary-purple);
     justify-content: flex-start;
     align-items:center;
     flex-wrap: wrap;
@@ -133,7 +145,7 @@ header nav ul li a:hover, .info a:hover{
 
 /*flex for projects*/
 .projects-container{
-    background: #e2d3eb;
+    background: var(--primary-purple);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -148,19 +160,19 @@ header nav ul li a:hover, .info a:hover{
     flex-wrap: wrap;
     font-size: 30px;
     font-weight: bold;
-    border: 3px solid #616c7d;
+    border: 3px solid var(--third-gray);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin: 1em;
 }
 
 .title a{
-    color: white;
+    color: var(--four-white);
     height: 100%;
     width: 100%;
     display: flex;
     align-items: flex-end;
     text-decoration: none;
-    border: 1px solid #616c7d;
+    border: 1px solid var(--third-gray);
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
 }
@@ -199,7 +211,7 @@ header nav ul li a:hover, .info a:hover{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background: #e2d3eb;
+    background: var(--primary-purple);
     padding-top: 50px;
     flex-wrap: wrap;
 }
@@ -216,6 +228,6 @@ header nav ul li a:hover, .info a:hover{
 .info a{
     margin: 30px auto;
     text-decoration: none;
-    border-bottom: 3px solid#9ed9db;
-    color: #616c7d;
+    border-bottom: 3px solid var(--secondary-blue);
+    color: var(--third-gray);
 }
