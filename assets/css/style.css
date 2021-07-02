@@ -1,5 +1,5 @@
 
-
+/*general properties*/
 body{
     width: 100%;
     height: 100%;
@@ -34,7 +34,7 @@ header a{
     color: #616c7d;
 }
 
-
+/*flex for navigator*/
 header nav ul{
     display: flex;
     flex-wrap: wrap;
@@ -43,6 +43,7 @@ header nav ul{
     list-style: none;
 }
 
+/*nav apperance*/
 header nav ul li a{
     margin: 40px 30px 0px 30px;
     color: #9ed9db;
@@ -66,8 +67,8 @@ header nav ul li a:hover, .info a:hover{
     padding-right: 40px;
 }
 
+/*flex for hero section*/
 .hero h2{
-   
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,28 +78,25 @@ header nav ul li a:hover, .info a:hover{
     font-size: 20px;
 }
 
-
+/*flex for about section*/
 .about{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    /* background:green; */
     background: #e2d3eb;
     padding-top: 50px;
-
 }
-
 
 .about p{
     display: flex;
     padding-left: 70px;
-    /* background: chocolate; */
     width: 90%;
     text-align: center;
     justify-content: center;
 }
 
+/* grey border for entire page*/
 .border{
     display: flex;
     justify-content: flex-start;
@@ -110,8 +108,7 @@ header nav ul li a:hover, .info a:hover{
 }
 
 
-/*Beginning of title location adjustment*/
-
+/*flex for work secion*/
 .work-container{
     display: flex;
     background: #e2d3eb;
@@ -123,7 +120,6 @@ header nav ul li a:hover, .info a:hover{
 
 .section-heading{
     display: flex;
-    /* background: orange; */
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -135,6 +131,7 @@ header nav ul li a:hover, .info a:hover{
     padding: 0px 5px 0px 58px;
 }
 
+/*flex for projects*/
 .projects-container{
     background: #e2d3eb;
     display: flex;
@@ -144,6 +141,7 @@ header nav ul li a:hover, .info a:hover{
     width: 100%;
 }
 
+/*adjust title of project*/
 .title{
     display: flex;
     align-items: flex-end;
@@ -154,7 +152,6 @@ header nav ul li a:hover, .info a:hover{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin: 1em;
 }
-
 
 .title a{
     color: white;
@@ -168,29 +165,24 @@ header nav ul li a:hover, .info a:hover{
     border-radius: 5px;
 }
 
+/*image adjustment*/
 #run-buddy{
     background-image: url(../images/run-buddy1.PNG);
-    width: 40%;
-    height: 300px;
-    background-size: 100% 100%;
 }
 
 #horiseon{
     background-image: url(../images/horiseon1.PNG);
-    width: 40%;
-    height: 300px;
-    background-size: 100% 100%;
 }
 
 #code{
     background-image: url(../images/code.PNG);
-    width: 40%;
-    height: 300px;
-    background-size: 100% 100%;
 }
 
 #calculator{
     background-image: url(../images/calculator.PNG);
+}
+
+#run-buddy, #horiseon, #code, #calculator{
     width: 40%;
     height: 300px;
     background-size: 100% 100%;
@@ -200,21 +192,17 @@ header nav ul li a:hover, .info a:hover{
     transform: scale(1.05);
     transition: all .5s;
 }
+/*End of image adjustment*/
 
-/*End of title location adjustment*/
-
-
-
+/*flex for cantact info*/
 .resume{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     background: #e2d3eb;
-    /* background: green; */
     padding-top: 50px;
     flex-wrap: wrap;
 }
-
 
 .info{
     display: flex;
@@ -222,9 +210,9 @@ header nav ul li a:hover, .info a:hover{
     text-align: center;
     text-decoration: none;
     width: 100%;
-    /* background: orange;    */
 }
 
+/*adjust components in resume*/
 .info a{
     margin: 30px auto;
     text-decoration: none;
