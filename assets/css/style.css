@@ -51,7 +51,7 @@ header nav ul li a{
     border-bottom: 3px solid #9ed9db;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover, .info a:hover{
     background: #9ed9db;
     color: #eeebf2;
 }
@@ -81,28 +81,27 @@ header nav ul li a:hover{
 .about{
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
-    background:#e2d3eb;
+    /* background:green; */
+    background: #e2d3eb;
+    padding-top: 50px;
 
 }
 
-/* .about h2{
-    background: chocolate; 
-} */
 
 .about p{
-    /* background: chartreuse; */
     display: flex;
     padding-left: 70px;
-    width: 80%;
+    /* background: chocolate; */
+    width: 90%;
     text-align: center;
     justify-content: center;
 }
 
 .border{
-    flex-direction: column;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     background: #e2d3eb;
     flex-wrap: wrap;
@@ -115,20 +114,21 @@ header nav ul li a:hover{
 
 .work-container{
     display: flex;
-    background: yellow;
+    background: #e2d3eb;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items:center;
     flex-wrap: wrap;
     padding-top: 50px;
 }
 
-/* .container-main{
+.section-heading{
     display: flex;
-    background: red;
-    justify-content:flex-start;
+    /* background: orange; */
+    justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
-} */
+    width: 15%;
+}
 
 /*align border */
 .section-heading h2{
@@ -136,60 +136,69 @@ header nav ul li a:hover{
 }
 
 .projects-container{
-    background: chartreuse;
+    background: #e2d3eb;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .title{
     display: flex;
-    justify-content:flex-start;
     align-items: flex-end;
     flex-wrap: wrap;
-    background: cyan;
     font-size: 30px;
     font-weight: bold;
+    border: 3px solid #616c7d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 1em;
 }
 
 
 .title a{
-    background: red;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
     text-decoration: none;
-    color: #616c7d;
+    border: 1px solid #616c7d;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
 }
 
 #run-buddy{
     background-image: url(../images/run-buddy1.PNG);
-    width: 700px;
+    width: 40%;
     height: 300px;
+    background-size: 100% 100%;
+}
+
+#horiseon{
+    background-image: url(../images/horiseon1.PNG);
+    width: 40%;
+    height: 300px;
+    background-size: 100% 100%;
+}
+
+#code{
+    background-image: url(../images/code.PNG);
+    width: 40%;
+    height: 300px;
+    background-size: 100% 100%;
+}
+
+#calculator{
+    background-image: url(../images/calculator.PNG);
+    width: 40%;
+    height: 300px;
+    background-size: 100% 100%;
 }
 
 .title:hover{
     transform: scale(1.05);
     transition: all .5s;
-}
-/* .title:link{
-    
-} */
-
-#horiseon{
-    background-image: url(../images/horiseon1.PNG);
-    width: 700px;
-    height: 300px;
-}
-
-#code{
-    background-image: url(../images/code.PNG);
-    width: 700px;
-    height: 300px;
-}
-
-#calculator{
-    background-image: url(../images/calculator.PNG);
-    width: 700px;
-    height: 300px;
 }
 
 /*End of title location adjustment*/
@@ -199,27 +208,26 @@ header nav ul li a:hover{
 .resume{
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     background: #e2d3eb;
+    /* background: green; */
     padding-top: 50px;
+    flex-wrap: wrap;
 }
 
-/*padding helps align border*/
-.resume h2{
-    padding: 0px 5px 0px 20px;
-}
 
 .info{
     display: flex;
     justify-content: space-between;
     text-align: center;
     text-decoration: none;
-    width: 85%;
+    width: 100%;
     /* background: orange;    */
 }
 
 .info a{
     margin: 30px auto;
     text-decoration: none;
-    border-bottom: 3px solid#616c7d;
+    border-bottom: 3px solid#9ed9db;
+    color: #616c7d;
 }
