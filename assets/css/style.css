@@ -232,7 +232,7 @@ header nav ul li a:hover, .info a:hover{
     color: var(--third-gray);
 }
 
-@media screen and (max-width: 768) {
+@media screen and (max-width: 768px) {
     header nav ul{
         display: flex;
         flex-wrap: wrap;
@@ -257,13 +257,17 @@ header nav ul li a:hover, .info a:hover{
     }   
 }
 
-@media screen and (max-width: 575) {
+@media screen and (max-width: 575px) {
     header nav ul{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         list-style: none;
+        padding: 0px;
+        margin: 0px auto 30px auto;
+        font-size: 15px;
+        
     }
 
     .section-heading h2{
