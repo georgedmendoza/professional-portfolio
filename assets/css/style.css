@@ -232,6 +232,17 @@ header nav ul li a:hover, .info a:hover{
     color: var(--third-gray);
 }
 
+/*beginning of screen size adjustment*/
+@media screen and (max-width: 980px) {
+    .section-heading h2{
+        padding: 0px 5px 0px 30px;
+    }
+
+    h2{
+        font-size: 25px;
+    } 
+}
+
 @media screen and (max-width: 768px) {
     header nav ul{
         display: flex;
@@ -264,7 +275,6 @@ header nav ul li a:hover, .info a:hover{
         align-items: center;
         justify-content: center;
         list-style: none;
-        padding: 0px;
         margin: 0px auto 30px auto;
         font-size: 15px;
         
@@ -294,4 +304,4 @@ header nav ul li a:hover, .info a:hover{
     }
 
 }
-
+/*End screen sizr adjustment*/
